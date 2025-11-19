@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Sidebar.css'; // Keep your CSS import
+import logo from '../components/LOGO.png'; 
 
 const Sidebar = ({ onSelect, selected }) => {
   const [collapsed, setCollapsed] = useState(false);
@@ -27,7 +28,7 @@ const Sidebar = ({ onSelect, selected }) => {
 
       {/* Logo section */}
       <div className="logo-container" title="Aura">
-        <img src="/LOGO.png" alt="AURA Logo" className="logo" />
+        <img src={logo} alt="Aura Logo" className="logo" />
         {!collapsed && <h1 className="app-title">AURA</h1>}
       </div>
 
